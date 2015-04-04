@@ -1,0 +1,22 @@
+# See https://atom.io/docs/latest/hacking-atom-package-word-count#menus for more details
+'context-menu':
+  'atom-text-editor': [
+    {
+      'label': 'Toggle php-productivity-tools'
+      'command': 'php-productivity-tools:toggle'
+    }
+  ]
+'menu': [
+  {
+    'label': 'Packages'
+    'submenu': [
+      'label': 'php-productivity-tools'
+      'submenu': [
+        {
+          'label': 'Toggle'
+          'command': 'php-productivity-tools:toggle'
+        }
+      ]
+    ]
+  }
+]
